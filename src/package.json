@@ -1,0 +1,14 @@
+{
+  "name": "collections",
+  "version": "1.0.0",
+  "description": "",
+  "main": "collections.js",
+  "scripts": {
+  },
+  "author": "Mark Sayson",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^3.1.15",
+    "eslint": "^0.22.1"
+  }
+}

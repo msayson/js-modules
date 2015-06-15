@@ -1,0 +1,19 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "collectionTests.js",
+  "scripts": {
+    "build": "browserify collections/SortedArrayTest > build.js",
+    "lint": "eslint ../src"
+  },
+  "author": "Mark Sayson",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^3.1.15",
+    "browserify": "^10.2.4",
+    "eslint": "^0.22.1",
+    "gulp": "^3.9.0",
+    "qunitjs": "^1.18.0"
+  }
+}
