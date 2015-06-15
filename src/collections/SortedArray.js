@@ -16,9 +16,8 @@ var SortedArray = function(_comparator, items) {
          return 0;
       }
 
-      var probeIndex, compareResult, left = 0, right = sortedArray.length - 1;
-
       //Uses binary search to find index of item
+      var probeIndex, compareResult, left = 0, right = sortedArray.length - 1;
       while (left <= right) {
          probeIndex = Math.round((right + left) / 2);
          compareResult = comparator(item, sortedArray[probeIndex]);
@@ -38,7 +37,7 @@ var SortedArray = function(_comparator, items) {
          return probeIndex + 1;
       }
       //item <= currElement, place here
-      return probeIndex; //place on right of closest match
+      return probeIndex;
    }
 
    return {
@@ -68,9 +67,8 @@ var SortedArray = function(_comparator, items) {
       //Returns index in sorted array, or -1 if not found
       //Runtime: O(log(n))
       indexOf: function(item) {
-         var probeIndex, compareResult, left = 0, right = sortedArray.length - 1;
-
          //Uses binary search to find index of item
+         var probeIndex, compareResult, left = 0, right = sortedArray.length - 1;
          while (left <= right) {
             probeIndex = Math.round((right + left) / 2);
             compareResult = comparator(item, sortedArray[probeIndex]);
@@ -83,7 +81,6 @@ var SortedArray = function(_comparator, items) {
                return probeIndex;
             }
          }
-
          return -1; //item not found
       },
 
